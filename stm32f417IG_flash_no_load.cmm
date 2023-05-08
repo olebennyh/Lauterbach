@@ -28,22 +28,23 @@
   DO ~~/demo/arm/flash/stm32f4xx.cmm PREPAREONLY DUALPORT=1
 
   ; Program the internal flash
-  FLASH.ReProgram.ALL /Erase
+  ;FLASH.ReProgram.ALL /Erase
   ; D:\Development\Project\R-BMC_R-SMC\R-BMC_417_BootLoader\Debug
-  Data.LOAD.Elf D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf /plusvm
+  ;Data.LOAD.Elf R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf /plusvm
   ; D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug
-  Data.LOAD.Elf D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf /noclear /plusvm
+  ;Data.LOAD.Elf R-BMC_417_V1\Debug\R-BMC_417_V1.elf /noclear /plusvm
   FLASH.ReProgram.off
   mode.hll
   ; Reset device
   SYStem.Down
   SYStem.Up
-   r.set PC \\R_BMC_417_BootLoader\Global\Reset_Handler 
+  ; r.set PC \\R_BMC_417_BootLoader\Global\Reset_Handler 
   ; Loading symbol information
   ; Data.LOAD.Elf ~~~~/demo_flash.axf /NoCODE
 
-  Go.direct \\R_BMC_417_V1\main\main\3
-  ; Go.direct \\R_BMC_417_Bootloader\main\main
+  ;Go.direct \\R_BMC_417_V1\main\main\3
+  ; Go.direct \\R-BMC_417_Bootloader\main\main
+  ; Go.direct \\R-BMC_417_Bootloader\main\main\1
   Wait !run()
   ; open some windows
   WinCLEAR
@@ -57,11 +58,12 @@
   WinPOS 0% 50% 50% 30%
   Frame /Locals /Caller
 
- tpiu.portsize SWV
- tpiu.SWVPrescaler 8
+ ;tpiu.portsize SWV
+ ;tpiu.SWVPrescaler 8
  ;  ITM.on
  ITM.off
-ITM.PCSampler 1/128
+trace.off
+;ITM.PCSampler 1/128
 ;T.AF
  task.config ~~/demo/arm/kernel/threadx/threadx.t32
  
