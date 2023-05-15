@@ -1,0 +1,35 @@
+;-----------------------------------------------------------------------------------
+; @Keywords: Cortex-M4, debug, STM32, SWD
+; @Author: HDA
+; @Board: RecabAB-R-BMC
+; @Chip: STM32F4*
+; @Copyright: (C) 1989-2022 Lauterbach GmbH, licensed for use with TRACE32(R) only
+; --------------------------------------------------------------------------------
+; $Id: stm32f417IG_flash.cmm $
+
+; Basic setup
+  RESet
+  SYStem.RESet
+  SYStem.CPU STM32F417IG
+  SYStem.CONFIG.DEBUGPORTTYPE SWD
+  SYStem.MemAccess DAP
+  SYStem.Option DUALPORT ON
+  SYStem.Option IMASKASM ON
+  SYStem.Option IMASKHLL ON
+  SYStem.Up
+
+
+  ; Setup flash configuration using the board support scripts of the TRACE32 installation
+  DO ~~/demo/arm/flash/stm32f4xx.cmm PREPAREONLY DUALPORT=1
+
+  ; Program the internal flash
+  ; FLASH.ReProgram.ALL /Erase
+  FLASH.ReProgram.ALL /Erase
+  Data.LOAD.Binary sector_0.bin 0x08000000
+  Data.LOAD.Binary R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin  0x08008000
+  Data.LOAD.Binary R-BMC_417_V1_STM3241\Debug\R-BMC_417_V1_STM3241.bin 0x08040000
+  FLASH.ReProgram.off
+  SYStem.Down
+  SYStem.Up
+ 
+  ENDDO

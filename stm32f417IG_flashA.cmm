@@ -21,6 +21,8 @@
   SYStem.CONFIG.DEBUGPORTTYPE SWD
   SYStem.MemAccess DAP
   SYStem.Option DUALPORT ON
+  SYStem.Option IMASKASM ON
+  SYStem.Option IMASKHLL ON
   SYStem.Up
 
 

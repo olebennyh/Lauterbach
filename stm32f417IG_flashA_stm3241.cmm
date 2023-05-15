@@ -1,0 +1,74 @@
+;-----------------------------------------------------------------------------------
+; @Title: Simple sieve demo running from FLASH for STM32F4xx derivatives
+; @Description:
+;   This is a small demo running from FLASH showing how to setup a debug 
+;   session  on Cortex-M4 for STM32F4DISCOVERY board. The sieve demo is   
+;   loaded on flash using the board support scripts of the TRACE32 
+;   installation.
+;   Prerequisites : see ../stm32f4/readme.txt
+; @Keywords: Cortex-M4, debug, STM32, SWD
+; @Author: OBH/KM
+; @Board: RecabAB-R-BMC
+; @Chip: STM32F4*
+; @Copyright: (C) 1989-2022 Lauterbach GmbH, licensed for use with TRACE32(R) only
+; --------------------------------------------------------------------------------
+; $Id: stm32f417IG_flash.cmm  $
+
+; Basic setup
+  RESet
+  SYStem.RESet
+  SYStem.CPU STM32F417IG
+  SYStem.CONFIG.DEBUGPORTTYPE SWD
+  SYStem.MemAccess DAP
+  SYStem.Option DUALPORT ON
+  SYStem.Option IMASKASM ON
+  SYStem.Option IMASKHLL ON
+  SYStem.Up
+
+
+  ; Setup flash configuration using the board support scripts of the TRACE32 installation
+  DO ~~/demo/arm/flash/stm32f4xx.cmm PREPAREONLY DUALPORT=1
+
+  ; Program the internal flash
+  ; FLASH.ReProgram.ALL /Erase
+  FLASH.ReProgram 0x08000000--0x08003FFF /Erase
+  FLASH.ReProgram 0x08040000--0x0807FFFF /Erase
+  Data.LOAD.Binary sector_0.bin 0x8000000
+  ; Data.LOAD.Binary R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin  0x08008000
+  Data.LOAD.Binary R-BMC_417_V1\Debug\R-BMC_417_V1.bin 0x08040000
+  FLASH.ReProgram.off
+  mode.hll
+  ; Reset device
+  SYStem.Down
+  SYStem.Up
+  ; Loading symbol information
+  ;Data.LOAD.Elf R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf /nocode
+  Data.LOAD.Elf R-BMC_417_V1\Debug\R-BMC_417_V1.elf /nocode
+  r.set PC \\R_BMC_417_V1\Global\Reset_Handler
+
+  ; Go.direct \\R_BMC_417_BootLoader\main\main
+  Go.direct \\R_BMC_417_V1\main\main\1
+
+  Wait !run()
+  ; open some windows
+  WinCLEAR
+
+  WinPOS 0% 0% 50% 50%
+  List.auto
+
+  WinPOS 50% 0% 50% 50%
+  Register.view /SpotLight
+
+  WinPOS 0% 50% 50% 30%
+  Frame /Locals /Caller
+
+ ;tpiu.portsize SWV
+ ;tpiu.SWVPrescaler 8
+ ;  ITM.on
+ ITM.off
+trace.off
+;ITM.PCSampler 1/128
+;T.AF
+ task.config ~~/demo/arm/kernel/threadx/threadx.t32
+ 
+  ENDDO

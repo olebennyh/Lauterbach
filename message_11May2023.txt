@@ -1,0 +1,118 @@
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->JtagToSwd; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+no difference found in SD:0x0--0x7/SD:0x8000000
+Dualport flash programming mode enabled
+file 'D:\Development\Project\R-BMC_R-SMC\sector_0.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.bin' (Binary) loaded.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf' (ELF/DWARF2) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf' (ELF/DWARF2) loaded.
+CAnalyzer SWV rate detection o.k. (f=169.2MHz)
+ThreadX: detected 32bit address size
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+no difference found in SD:0x0--0x7/SD:0x8000000
+Dualport flash programming mode enabled
+file 'D:\Development\Project\R-BMC_R-SMC\sector_0.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.bin' (Binary) loaded.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf' (ELF/DWARF2) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf' (ELF/DWARF2) loaded.
+CAnalyzer SWV rate detection o.k. (f=170.2MHz)
+ThreadX: detected 32bit address size
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+no difference found in SD:0x0--0x7/SD:0x8000000
+Dualport flash programming mode enabled
+file 'D:\Development\Project\R-BMC_R-SMC\sector_0.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.bin' (Binary) loaded.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf' (ELF/DWARF2) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf' (ELF/DWARF2) loaded.
+CAnalyzer SWV rate detection o.k. (f=169.2MHz)
+ThreadX: detected 32bit address size
+target running
+target running
+target running
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+no difference found in SD:0x0--0x7/SD:0x8000000
+Dualport flash programming mode enabled
+file 'D:\Development\Project\R-BMC_R-SMC\sector_0.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.bin' (Binary) loaded.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf' (ELF/DWARF2) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf' (ELF/DWARF2) loaded.
+CAnalyzer SWV rate detection o.k. (f=169.2MHz)
+ThreadX: detected 32bit address size
+CAnalyzer SWV rate detection o.k. (f=170.2MHz)
+Analyzer data capture o.k.
+CAnalyzer.AutoFocus: Cannot detect frequency for traceport!
+Warning: trace test failed: not enough samples in the trace
+trace test failed.
+CAnalyzer.AutoFocus: Cannot detect frequency for traceport!
+Warning: trace test failed: not enough samples in the trace
+trace test failed.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+no difference found in SD:0x0--0x7/SD:0x8000000
+Dualport flash programming mode enabled
+file 'D:\Development\Project\R-BMC_R-SMC\sector_0.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.bin' (Binary) loaded.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf' (ELF/DWARF2) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf' (ELF/DWARF2) loaded.
+CAnalyzer SWV rate detection o.k. (f=169.2MHz)
+ThreadX: detected 32bit address size
+CAnalyzer SWV rate detection o.k. (f=170.2MHz)
+debug port fail
+debug port fail
+Warning: Task detection disabled due to SYStem.Mode switch.
+target system down
+target system down
+target system down
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+no difference found in SD:0x0--0x7/SD:0x8000000
+Dualport flash programming mode enabled
+file 'D:\Development\Project\R-BMC_R-SMC\sector_0.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.bin' (Binary) loaded.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf' (ELF/DWARF2) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf' (ELF/DWARF2) loaded.
+CAnalyzer SWV rate detection o.k. (f=169.2MHz)
+ThreadX: detected 32bit address size
+CAnalyzer SWV rate detection o.k. (f=84.14MHz)
+debug port fail
+Warning: Task detection disabled due to SYStem.Mode switch.
+target system down
+target system down
+target system down
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+no difference found in SD:0x0--0x7/SD:0x8000000
+Dualport flash programming mode enabled
+file 'D:\Development\Project\R-BMC_R-SMC\sector_0.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.bin' (Binary) loaded.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf' (ELF/DWARF2) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf' (ELF/DWARF2) loaded.
+CAnalyzer SWV rate detection o.k. (f=170.2MHz)
+ThreadX: detected 32bit address size
+CAnalyzer SWV rate detection o.k. (f=42.0MHz)
+debug port fail
+debug port fail
+Warning: Task detection disabled due to SYStem.Mode switch.
+target system down
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+no difference found in SD:0x0--0x7/SD:0x8000000
+Dualport flash programming mode enabled
+file 'D:\Development\Project\R-BMC_R-SMC\sector_0.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.bin' (Binary) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.bin' (Binary) loaded.
+INFO: SW-DP DPv1 enabled; SwitchToSwd=TryAll->None; TARGETSEL=0xffffffff; DPIDR=0x2ba01477
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf' (ELF/DWARF2) loaded.
+file 'D:\Development\Project\R-BMC_R-SMC\R-BMC_417_V1\Debug\R-BMC_417_V1.elf' (ELF/DWARF2) loaded.
+CAnalyzer SWV rate detection o.k. (f=169.2MHz)
+ThreadX: detected 32bit address size
+
