@@ -24,8 +24,7 @@
   SYStem.Option IMASKASM ON
   SYStem.Option IMASKHLL ON
   SYStem.UP
-  OS.Command sct0.bat
-  WAIT 2S
+
 
   ; Setup flash configuration using the board support scripts of the TRACE32 installation
   DO ~~/demo/arm/flash/stm32f4xx.cmm PREPAREONLY DUALPORT=1
@@ -43,8 +42,8 @@
   SYStem.Down
   SYStem.Up
   ; Loading symbol information
-  Data.LOAD.Elf R-BMC_417_Bootloader\Debug\R-BMC_417_BootLoader.elf /nocode
-  Data.LOAD.Elf R-BMC_417_V1\Debug\R-BMC_417_V1.elf /nocode /noclear
+  Data.LOAD.Elf R-BMC_417_Bootloader\Release\R-BMC_417_BootLoader.elf /nocode
+  Data.LOAD.Elf R-BMC_417_V1\Release\R-BMC_417_V1.elf /nocode /noclear
   r.set PC \\R_BMC_417_BootLoader\Global\Reset_Handler
 
   ; Go.direct \\R_BMC_417_BootLoader\main\main
